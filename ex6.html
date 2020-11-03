@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="c-loader">
+
+    </div>
+</body>
+
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .c-loader {
+        animation: is-rotating 1s cubic-bezier(.51,.53,.42,.41) infinite;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 6px solid #e5e5e5;
+        border-top-color: #a451db;
+    }
+
+    @keyframes is-rotating {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+</style>
+</html>
